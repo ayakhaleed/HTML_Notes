@@ -1,0 +1,29 @@
+li{color:rgb(80, 5, 120);
+   font-family:"russo one",serif}
+a{color:#009900;}
+ header{font-size:80px;
+	   background-color:#000000;
+	   font-family:"russo one",serif;
+	   font-style:            italic;
+	   border-radius:           50px;
+	   color:				 #ffffff;
+	   height:                 230px;
+	   margin-top:            -100px;
+           text-shadow:  40px  50px  10px #709;          
+	   
+	   
+}
+img{border-radius:              50px;
+	float:                     right;
+	height:                      90%;
+	margin-top:               -260px;
+	margin-right:               10px;
+
+
+}
+h4{
+   padding-top:                70px;
+   padding-left:               20px;
+}
+footer{
+    font-size:                 70px;

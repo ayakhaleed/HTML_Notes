@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>my first own page</title>
+		<style>
+		</style>
+		<link rel="stylesheet" href="style_notes.css">
+		<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header><h4>My HTML Notes:</h4><img src="https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="bear photo"></header>
+		<ul>
+			<li><p>the markup is the something which make the text <em> <mark><strong>different</strong></mark></em> from default which we write in text editor and appears on the browser.</p>
+			<li>H<sub>2</sub>O
+			<li>x<sup>2</sup>+5=7<br> 
+			<li><strong>#there is two links for block and inline elements:</strong>
+				<ol>
+					<li><mark>1)Block-level elements —</mark><a href=" https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements."> https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements.</a>
+					<li><mark>2)Inline elements — </mark><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Elements.">https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Elements.</a>
+				</ol>
+			<li>the closing tag for <mark>li</mark> tag is optional as when the browser find another <mark>li</mark> it knows that the previous one must be done and also p element is like this.
+			<li><strong>URL</strong>:stands for Uniform Resorce Locator
+				<ul>
+					<li>the URL tells the browser how to locat a particular resource and the <mark>Uniform </mark> means that consistent.
+					<li>there are two ways to written an URL:
+						<ol>
+							<li>http or https......
+							<li>www.........com
+						</ol>
+					-that's works good for the browser but in HTML it won't work ,we must tell the browser all the information it needs,so links are shown in version called fully qualifed URL OR absolute URL .
+					<li>the MOST basics parts of URL:
+						<ul>
+							<li><mark>HTTP or HTTPS:</mark>which the URL begins with are protocols or ways that the browser can get something but HTTPS to tell the browser to use secure encryption to connect a web server.
+							<br>-the URL for a file on your local drive starts with file instead(file://.......).
+							<li><mark>Domain name:</mark>(en.wikipedia.org)this tells the browser what server to connect to.file URLs don't have this because there is no server it just the browser reading off of your own computer.		
+							<li><mark>file path:</mark>which begins with a / is the name of the directory and the file the URL is referring to.this will sometimes be empty or single slash / if you are linking to the top page or the home page of a site.
+							And often this slash will be omitted altogether
+						</ul>
+				</ul>
+			<li>href attribute stands for :HYPER TEXT REFRENCE.
+			<li>When i want to refer to an image on my own computer (when it is in the same folder with my html file) ,i put image name in src attribute (ex:kittens .jpg)and it called relative URL which not start with http or https.<br> 
+			<li><mark>A link within a single web site can be written using a relative URL. </mark>
+			<li> the only required tag using in head tag is <mark>(title tag).</mark>
+			<li> in html5,head and body tags isn't required to write in your code as the browser can attempt to place each elements in their tag .(for example:if you write title tag ,it wiil put it in head tag ,p tag in body tag and so on....)but you can't put some 
+			head tags within body tags ,it will be wrong.
+			<li>html validator:<a href=" https://validator.w3.org/ ">validator w3</a>
+			<li>to access Developer Tools in your browser follow this steps:
+				<ol>
+					<li>Open the Chrome menu at the top right of the browser window (the three vertical dots), select and select Tools > Developer Tools, OR
+					<li>Right-click on any page element and select Inspect.
+				</ol>
+			<li>when we write a html code the browser turns it into map which show which elements are inside other ,this map called data structure or <mark>DOM(DOCUMENT OBJECT MODEL)</mark>.this map is built in the computer memory:
+				<ul>
+					<li>the DOM has  a tree structure of each html element .
+					<li>the tree consist of elements called nodes that have connection between them called branches.
+					<li>the html tag represent the root of the tree. and has the head and the body tag as its children.
+				</ul>
+			<li> You may have noticed that the semicolon ; at the end is optional—removing it does not seem to cause a problem. This is true if you only have one style applied to the element.<br> If you want to add more styles, the semicolon must be used to separate
+			them.<mark> For example:if i want to change the color and the align of a text.</mark>
+			<li>Without the quotes, the browser can sometimes still figure out where the attribute value ends. So it's possible to get away with leaving the quotes off, in some cases.<br>
+			But if there is a space (and no quotes) then the browser will get confused and think the attribute value has ended right before that space.
+			<li>To signal to the browser that this code is in the CSS language, we need to put it inside a style element or use it as the value of a style attribute.
+			<li>in css syntax there are most main two things(ruleset):
+				<ol>
+					<li>selector:is the element from html like p or h which we want to apply the style to it.
+					<li>karly brackets.{}
+					<li>declaration or rules:consist of property ,colon,the value and semicolon.
+				</ol>
+			<li>the one ruleset can have more than one declaration but one selector.
+			<li>the difference between the id and the class is that the id is unique as we can use it for one element but class can be used for more than one element. 
+			<li><mark>descendant selector:</mark>when i need to add a certain style to a children tag i put the outer tag and the the inner tag and between them we make a space.<br>
+			ex:li em {color:red;}:this called descendant selector.
+			<li>when we make a certain style for any tag this style become the  default style for all descendant tags come from this tag only don't if we change it.<br>
+			ex:if we make body 'text color red the all text of the page become red but i can change it for certain tags like p or h1.
+			<li>here is a css refrence:<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference .</a>
+			<li>here is html color picker:<a href="https://www.w3schools.com/colors/colors_picker.asp">https://www.w3schools.com/colors/colors_picker.asp .</a>
+			<li>this is a guid for google fonts<a href="https://developers.google.com/fonts/docs/getting_started">https://developers.google.com/fonts/docs/getting_started .</a>
+			<li>You can find all the available fonts at:<a href="https://fonts.google.com/">https://fonts.google.com/</a>
+			<li> what's a "gotcha"? In computer science, a gotcha is some feature of the code that is likely to trip you up and cause a mistake.when we write font property which make us write all font properties in one line but in a certain order ,and this page has more explain 
+			about this topic :<br><a href="https://css-tricks.com/almanac/properties/f/font/">https://css-tricks.com/almanac/properties/f/font/</a>
+			<li>More about flex box:<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes</a>
+			<li>another link for understanding flex box:<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox</a>
+			<li>For more on axis and direction with flexbox see the:<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#The_two_axes_of_flexbox">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_
+			Concepts_of_Flexbox#The_two_axes_of_flexbox</a>
+			<li>For more information on ordering flex items, you can see this section of:<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#Ordering_flex_items">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#Ordering_flex_items</a>
+			<li>we can change the order of items show in boxes with css(flex box properties) by adding order property to items in the container box and give the one we want to show first a value 1 and so on.....
+			<li>For further research on align-items and justify-content in the flex box , see this MDN article:<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#Alignment_justification_and_distribution_of_free_space_
+			between_items">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#Alignment_justification_and_distribution_of_free_space_between_items</a>
+			<li>For more information on CSS Grid and Flexbox together see the articles below:
+				<ul>
+					<li><a href="https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412">https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412</a>
+					<li><a href="https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf">https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf</a>
+					<li><a href="https://css-tricks.com/css-grid-replace-flexbox/">https://css-tricks.com/css-grid-replace-flexbox/</a>
+				</ul>
+			<li>To explore grid setup deeper, you can check out this cool:<a href="https://cssgrid-generator.netlify.com/">https://cssgrid-generator.netlify.com/</a>
+			<li>There is so much flexibility with CSS grid! To learn even more about what you can do with grid-areas see the<a href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a>
+			<li>For even more control over how your content is laid out, check out this article titled<a href="https://gedd.ski/post/grid-item-placement/">https://gedd.ski/post/grid-item-placement/</a>
+			<li>Wordpress :<a href="https://wordpress.org/download/">https://wordpress.org/download/</a>
+			<li>for udacity support:<a href="https://classroom.udacity.com/nanodegrees/nd001-mena-nfp1/parts/351791f8-dfe9-4f73-a925-b59320a86e50/modules/c39d099d-6a2e-4471-98da-45bb55367c0a/lessons/a6222c17-e3c8-459b-a83d-1352dd36d019/concepts/fwd-support@udacity.com">your support!</a>
+		</ul>
+                <footer> Developed by:
+                          <div id="name">Aya Khaled Mohamed</div>
+                </footer>
+	</body>	
+</html>	
